@@ -22,7 +22,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-wrap gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <a href="#proyek">Lihat Proyek Kami</a>
+            <a href="#produk">Lihat Produk Kami</a>
           </Button>
           <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10">
             <a href="#kontak">Hubungi Kami</a>

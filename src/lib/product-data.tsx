@@ -16,7 +16,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Microsurfacing CH-15&trade;</>, 
       description: 'Lapisan tipis untuk preservasi jalan dengan lalu lintas rendah, menjaga keawetan permukaan jalan.', 
       detailedDescription: 'Microsurfacing CH-15™ adalah campuran aspal emulsi polimer yang dirancang khusus untuk jalan dengan volume lalu lintas ringan hingga sedang. Produk ini efektif untuk mengisi retak-retak kecil, memperbaiki kerusakan permukaan, dan memberikan lapisan aus baru yang tahan lama, sehingga memperpanjang umur jalan dan meningkatkan keselamatan.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/tPw1vW2Q/Microsurfacing-CH-15.png', 
       hint: 'road paving' 
     },
     { 
@@ -24,7 +24,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Microsurfacing CH-17&trade;</>, 
       description: 'Solusi ideal untuk jalan dengan volume lalu lintas sedang, meningkatkan daya tahan dan kenyamanan berkendara.',
       detailedDescription: 'Microsurfacing CH-17™ menawarkan keseimbangan sempurna antara biaya dan kinerja untuk jalan-jalan kolektor dan arteri sekunder. Dengan agregat yang sedikit lebih besar dari CH-15, produk ini memberikan tekstur permukaan yang lebih baik, meningkatkan ketahanan slip, dan secara signifikan meningkatkan daya tahan terhadap deformasi akibat lalu lintas sedang.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/6JBSzqKn/Microsurfacing-CH-17.png', 
       hint: 'road construction' 
     },
     { 
@@ -32,7 +32,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Microsurfacing CH-19&trade;</>, 
       description: 'Memberikan perlindungan maksimal untuk jalan raya dan arteri utama dengan lalu lintas padat.',
       detailedDescription: 'Dirancang untuk jalan raya, jalan tol, dan arteri utama dengan volume lalu lintas tinggi, Microsurfacing CH-19™ menggunakan agregat berkualitas tinggi dan emulsi polimer yang dimodifikasi secara khusus. Hasilnya adalah lapisan permukaan yang sangat kuat, tahan terhadap alur (rutting), dan mampu menahan beban berat, memastikan kinerja jangka panjang di bawah kondisi paling berat sekalipun.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/sJwDTtDt/Microsurfacing-CH-19.png', 
       hint: 'highway maintenance' 
     },
     { 
@@ -40,7 +40,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Microsurfacing CH-21&trade;</>, 
       description: 'Diformulasikan khusus untuk kondisi cuaca ekstrem dan beban berat, seperti pada area industri.',
       detailedDescription: 'Microsurfacing CH-21™ adalah solusi heavy-duty yang diformulasikan untuk area dengan beban sangat berat dan kondisi ekstrem, seperti kawasan industri, pelabuhan, dan area pergudangan. Campuran ini memiliki ketahanan superior terhadap tumpahan bahan kimia, beban statis yang berat, dan lalu lintas kendaraan lambat yang berbelok tajam.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/rGcJ9XvP/Microsurfacing-CH-21.png', 
       hint: 'heavy duty road' 
     },
     { 
@@ -48,7 +48,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Microsurfacing CH-23&trade;</>, 
       description: 'Pilihan premium untuk proyek yang membutuhkan presisi tinggi seperti landasan pacu bandara dan sirkuit balap.',
       detailedDescription: 'Untuk aplikasi yang menuntut presisi dan kinerja tertinggi, Microsurfacing CH-23™ adalah jawabannya. Produk ini digunakan pada landasan pacu bandara, taxiway, dan sirkuit balap, di mana permukaan yang sangat rata, daya cengkeram tinggi, dan ketahanan terhadap gaya geser ekstrem sangat penting. Formulanya memastikan pengeringan cepat untuk meminimalkan waktu penutupan.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/3mbNxhrq/Microsurfacing-CH-23.png', 
       hint: 'airport runway' 
     },
   ],

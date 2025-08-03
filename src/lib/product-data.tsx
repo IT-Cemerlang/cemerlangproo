@@ -54,14 +54,6 @@ export const productCategories: { [key: string]: Product[] } = {
   ],
   'Coldmix': [
     { 
-      slug: 'coldmix',
-      title: 'Coldmix', 
-      description: 'Campuran aspal dingin siap pakai untuk perbaikan jalan yang cepat dan efisien tanpa perlu pemanasan.',
-      detailedDescription: 'Coldmix adalah campuran aspal dingin yang praktis dan serbaguna, dirancang untuk perbaikan jalan yang cepat dan mudah. Dapat digunakan dalam berbagai kondisi cuaca, produk ini sangat ideal untuk menambal lubang, memperbaiki retakan, dan meratakan permukaan jalan tanpa memerlukan peralatan pemanas yang mahal. Cukup tuang, ratakan, dan padatkan.',
-      imgSrc: 'https://placehold.co/600x400.png', 
-      hint: 'asphalt repair' 
-    },
-    { 
       slug: 'coldmix-ch-24',
       title: <>Coldmix CH-24&trade;</>, 
       description: 'Campuran aspal dingin premium untuk perbaikan cepat pada jalan dengan lalu lintas sedang.',

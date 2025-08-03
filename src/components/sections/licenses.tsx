@@ -3,8 +3,8 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const licenses = [
   { name: 'ICAO-OACI-NKAO', imgSrc: 'https://placehold.co/150x80.png', hint: 'aviation logo' },
-  { name: 'FEDERATION AVIATION ADMINISTRATION', imgSrc: 'https://placehold.co/150x80.png', hint: 'aviation logo' },
-  { name: 'Kementerian Pehubungan Indonesia', imgSrc: 'https://placehold.co/150x80.png', hint: 'government logo' },
+  { name: 'Federation Aviation Administration', imgSrc: 'https://placehold.co/150x80.png', hint: 'aviation logo' },
+  { name: 'Kementerian Perhubungan Indonesia', imgSrc: 'https://placehold.co/150x80.png', hint: 'government logo' },
   { name: 'PADI UMKM', imgSrc: 'https://placehold.co/150x80.png', hint: 'business logo' },
   { name: 'LKPP INAPROC', imgSrc: 'https://placehold.co/150x80.png', hint: 'government logo' },
   { name: 'ISO 9001 : 2015', imgSrc: 'https://placehold.co/150x80.png', hint: 'certification logo' },
@@ -14,7 +14,7 @@ const licenses = [
 
 export default function LicensesSection() {
   return (
-    <section id="lisensi" className="py-16 md:py-24 bg-white text-card-foreground">
+    <section id="lisensi" className="py-16 md:py-24 bg-card text-card-foreground">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Lisensi Produk</h2>
@@ -24,7 +24,7 @@ export default function LicensesSection() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {licenses.map((license) => (
-            <Card key={license.name} className="flex flex-col items-center justify-center p-6 bg-card shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={license.name} className="flex flex-col items-center justify-center p-6 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="flex flex-col items-center justify-center p-0">
                 <div className="relative w-36 h-20 mb-4">
                   <Image
@@ -35,7 +35,7 @@ export default function LicensesSection() {
                     data-ai-hint={license.hint}
                   />
                 </div>
-                <p className="font-semibold text-center text-primary">{license.name}</p>
+                <p className="font-semibold text-center text-primary h-12 flex items-center">{license.name}</p>
               </CardContent>
             </Card>
           ))}

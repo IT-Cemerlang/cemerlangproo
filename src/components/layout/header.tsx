@@ -16,7 +16,6 @@ const navLinks = [
   { name: 'Proyek', href: '#proyek' },
   { name: 'Klien', href: '#klien' },
   { name: 'Blog', href: '#blog' },
-  { name: 'Kontak', href: '#kontak' },
 ];
 
 export default function Header() {
@@ -39,12 +38,12 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary flex-shrink-0">
           <Building2 className="h-7 w-7" />
           <span className='font-headline'>Cemerlang Group</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -56,6 +55,12 @@ export default function Header() {
           ))}
         </nav>
         
+        <div className="hidden md:flex items-center">
+            <Button variant="outline" asChild className="border-white text-white hover:bg-white/10">
+                <a href="#kontak">Hubungi Kami</a>
+            </Button>
+        </div>
+
         <div className="md:hidden">
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -87,6 +92,7 @@ export default function Header() {
                       {link.name}
                     </a>
                   ))}
+                   <a href="#kontak" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium transition-colors hover:text-primary">Hubungi Kami</a>
                 </nav>
               </div>
             </SheetContent>

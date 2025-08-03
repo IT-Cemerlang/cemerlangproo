@@ -12,6 +12,7 @@ const navLinks = [
   { name: 'Tentang Kami', href: '#tentang-kami' },
   { name: 'Direksi', href: '#direksi' },
   { name: 'Produk', href: '#produk' },
+  { name: 'Lisensi', href: '#lisensi' },
   { name: 'Proyek', href: '#proyek' },
   { name: 'Blog', href: '#blog' },
   { name: 'Kontak', href: '#kontak' },

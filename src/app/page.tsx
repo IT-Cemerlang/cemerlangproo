@@ -6,6 +6,7 @@ import DirectorsSection from '@/components/sections/directors';
 import ProductsSection from '@/components/sections/products';
 import LicensesSection from '@/components/sections/licenses';
 import ProjectsSection from '@/components/sections/projects';
+import ClientsSection from '@/components/sections/clients';
 import ArticlesSection from '@/components/sections/articles';
 import ContactSection from '@/components/sections/contact';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <ProductsSection />
         <LicensesSection />
         <ProjectsSection />
+        <ClientsSection />
         <ArticlesSection />
         <ContactSection />
       </main>

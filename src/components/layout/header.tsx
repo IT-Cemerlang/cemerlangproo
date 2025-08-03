@@ -14,6 +14,7 @@ const navLinks = [
   { name: 'Produk', href: '#produk' },
   { name: 'Lisensi', href: '#lisensi' },
   { name: 'Proyek', href: '#proyek' },
+  { name: 'Klien', href: '#klien' },
   { name: 'Blog', href: '#blog' },
   { name: 'Kontak', href: '#kontak' },
 ];

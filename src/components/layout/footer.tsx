@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Building2, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import Image from 'next/image';
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -14,8 +15,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Building2 className="h-7 w-7" />
-            <span className="text-xl font-bold font-headline">Cemerlang Group</span>
+             <Link href="/" className="flex items-center flex-shrink-0">
+              <Image src="https://i.ibb.co/SX8LnnF1/Logo-cemerlang-Ok-removebg-preview.png" alt="Cemerlang Group Logo" width={200} height={50} className="h-12 w-auto" />
+            </Link>
           </div>
           <div className="flex gap-4 mb-4 md:mb-0">
             <Link href="#" className="hover:text-primary transition-colors" aria-label="Facebook"><Facebook className="w-6 h-6" /></Link>

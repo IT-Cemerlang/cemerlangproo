@@ -5,25 +5,25 @@ import Link from 'next/link';
 
 export default function ContactSection() {
   return (
-    <section id="kontak" className="py-16 md:py-24 relative overflow-hidden bg-primary">
+    <section id="kontak" className="py-16 md:py-24 relative overflow-hidden bg-secondary">
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-                <div className="text-white">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Siap Membangun Bersama Kami?</h2>
-                    <p className="mt-4 text-lg text-primary-foreground/80">
+                <div className="text-secondary-foreground">
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Siap Membangun Bersama Kami?</h2>
+                    <p className="mt-4 text-lg text-secondary-foreground/80">
                         Hubungi kami hari ini untuk mendiskusikan proyek Anda berikutnya. Tim kami siap membantu mewujudkan visi Anda menjadi kenyataan.
                     </p>
                     <div className="mt-8 space-y-4">
                         <div className="flex items-center gap-4">
-                            <MapPin className="w-6 h-6 text-accent flex-shrink-0" />
+                            <MapPin className="w-6 h-6 text-primary flex-shrink-0" />
                             <span>Jl. Jenderal Sudirman Kav. 52-53, Jakarta Selatan, Indonesia</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <Phone className="w-6 h-6 text-accent flex-shrink-0" />
+                            <Phone className="w-6 h-6 text-primary flex-shrink-0" />
                             <span>(021) 1234 5678</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <Mail className="w-6 h-6 text-accent flex-shrink-0" />
+                            <Mail className="w-6 h-6 text-primary flex-shrink-0" />
                             <span>kontak@cemerlang.co.id</span>
                         </div>
                     </div>
@@ -31,8 +31,8 @@ export default function ContactSection() {
                 <div className="flex justify-center">
                     <Card className="w-full max-w-md p-8 shadow-2xl">
                         <CardContent className="flex flex-col items-center text-center p-0">
-                            <div className="p-4 bg-accent/20 rounded-full mb-4">
-                                <Share2 className="w-12 h-12 text-accent" />
+                            <div className="p-4 bg-primary/20 rounded-full mb-4">
+                                <Share2 className="w-12 h-12 text-primary" />
                             </div>
                             <h3 className="text-2xl font-bold text-primary mb-2">Terhubung dengan Kami</h3>
                             <p className="text-muted-foreground mb-6">Ikuti kami di media sosial untuk mendapatkan pembaruan terbaru.</p>

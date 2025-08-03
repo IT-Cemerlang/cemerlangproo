@@ -19,12 +19,12 @@ export default function ProjectsSection() {
         </div>
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col md:flex-row">
+            <Card key={project.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col md:flex-row bg-card">
               <div className="relative w-full md:w-1/3 h-60 md:h-auto min-h-[200px]">
                 <Image src={project.imgSrc} alt={project.title} fill className="object-cover" data-ai-hint={project.hint} />
               </div>
               <div className="w-full md:w-2/3 p-6 flex flex-col justify-center">
-                <Badge variant="secondary" className="w-fit mb-2 bg-accent/20 text-accent-foreground">{project.category}</Badge>
+                <Badge variant="secondary" className="w-fit mb-2 bg-primary/20 text-primary">{project.category}</Badge>
                 <CardTitle className="text-2xl mb-2 text-primary">{project.title}</CardTitle>
                 <CardDescription>Proyek ini merupakan bukti nyata dari dedikasi kami untuk memberikan hasil terbaik dengan teknologi mutakhir dan manajemen proyek yang efisien.</CardDescription>
               </div>

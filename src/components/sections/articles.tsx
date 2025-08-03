@@ -12,7 +12,7 @@ const articles = [
 
 export default function ArticlesSection() {
   return (
-    <section id="blog" className="py-16 md:py-24 bg-card">
+    <section id="blog" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Blog &amp; Wawasan</h2>
@@ -20,7 +20,7 @@ export default function ArticlesSection() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article) => (
-            <Card key={article.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={article.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card">
               <CardHeader className="p-0">
                 <div className="relative w-full h-48">
                     <Image src={article.imgSrc} alt={article.title} fill className="object-cover" data-ai-hint={article.hint}/>

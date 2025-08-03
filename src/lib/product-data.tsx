@@ -76,7 +76,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Ecobeton Chrono&trade;</>, 
       description: 'Beton cepat kering untuk perbaikan yang efisien dan proyek dengan jadwal ketat.',
       detailedDescription: 'Ecobeton Chrono™ adalah solusi beton inovatif yang dirancang untuk pengeringan super cepat, memungkinkan area yang diperbaiki dapat digunakan kembali dalam hitungan jam. Ideal untuk perbaikan jalan, lantai industri, dan proyek yang memerlukan waktu pengerjaan minimal.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/xKj96XXZ/Ecobeton-Chrono-e.png', 
       hint: 'fast setting concrete' 
     },
     { 
@@ -84,7 +84,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Ecobeton Paveshield Chrono&trade;</>, 
       description: 'Pelindung permukaan perkerasan yang cepat kering dan tahan lama.',
       detailedDescription: 'Ecobeton Paveshield Chrono™ adalah pelapis pelindung transparan yang cepat kering untuk perkerasan beton. Produk ini meningkatkan ketahanan terhadap abrasi, noda, dan cuaca, sekaligus mempertahankan tampilan alami beton. Cocok untuk trotoar, area parkir, dan plaza.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/qLbfb8sM/Ecobeton-Paveshield.png', 
       hint: 'pavement shield' 
     },
     { 
@@ -92,7 +92,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Ecobeton Vetrofluid&trade;</>, 
       description: 'Pelapis multifungsi untuk proteksi, pengerasan, dan waterproofing beton.',
       detailedDescription: 'Ecobeton Vetrofluid™ adalah larutan berbasis silikat yang meresap ke dalam beton, memberikan perlindungan permanen dari dalam. Produk ini mengeraskan permukaan, membuatnya kedap air, dan melindunginya dari kerusakan akibat siklus beku-cair serta bahan kimia. Solusi lengkap untuk durabilitas beton jangka panjang.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/BVdRHxCf/Ecobeton-vetrofluid.png', 
       hint: 'concrete protection' 
     },
   ],

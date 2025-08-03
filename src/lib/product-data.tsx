@@ -98,12 +98,28 @@ export const productCategories: { [key: string]: Product[] } = {
   ],
   'Sabda Seal': [
     { 
-      slug: 'sabda-seal',
-      title: 'Sabda Seal', 
-      description: 'Pelapis kedap air berkualitas tinggi untuk melindungi atap, dinding, dan area basah dari kebocoran.',
-      detailedDescription: 'Sabda Seal adalah pelapis waterproofing berbasis polimer fleksibel yang memberikan perlindungan handal terhadap kebocoran. Mudah diaplikasikan dengan kuas atau roller, produk ini membentuk lapisan membran yang elastis, tahan cuaca, dan tahan sinar UV. Ideal untuk atap beton, dak, balkon, kamar mandi, dan area basah lainnya.',
+      slug: 'sabda-seal-ch-27',
+      title: <>Sabda Seal CH-27&trade;</>, 
+      description: 'Pelapis kedap air serbaguna untuk perlindungan menengah pada berbagai permukaan.',
+      detailedDescription: 'Sabda Seal CH-27™ adalah pelapis waterproofing fleksibel yang dirancang untuk aplikasi pada atap, dinding, dan area basah dengan tingkat paparan sedang. Produk ini memberikan lapisan pelindung yang efektif terhadap rembesan air dan kelembaban, serta tahan terhadap perubahan cuaca.',
       imgSrc: 'https://placehold.co/600x400.png', 
-      hint: 'waterproofing seal' 
+      hint: 'waterproofing sealant' 
+    },
+    { 
+      slug: 'sabda-seal-ch-29',
+      title: <>Sabda Seal CH-29&trade;</>, 
+      description: 'Pelapis kedap air heavy-duty untuk area yang membutuhkan proteksi ekstra seperti kolam renang.',
+      detailedDescription: 'Sabda Seal CH-29™ menawarkan perlindungan waterproofing superior untuk area kritis seperti kolam renang, tangki air, dan basement. Formulanya yang lebih kuat memberikan ketahanan tinggi terhadap tekanan air dan bahan kimia, memastikan perlindungan jangka panjang.',
+      imgSrc: 'https://placehold.co/600x400.png', 
+      hint: 'heavy duty waterproofing' 
+    },
+    { 
+      slug: 'sabda-seal-ch-31',
+      title: <>Sabda Seal CH-31&trade;</>, 
+      description: 'Solusi premium dengan elastisitas tinggi untuk struktur yang mengalami pergerakan.',
+      detailedDescription: 'Sabda Seal CH-31™ adalah produk waterproofing premium dengan elastisitas superior, ideal untuk sambungan konstruksi, atap datar yang luas, dan struktur lain yang rentan terhadap pergerakan atau getaran. Produk ini mampu menahan retak dan menjaga integritas lapisan kedap air dalam kondisi dinamis.',
+      imgSrc: 'https://placehold.co/600x400.png', 
+      hint: 'flexible waterproofing' 
     },
   ],
   'Produk Spesial': [

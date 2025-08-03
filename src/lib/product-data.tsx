@@ -128,7 +128,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'Atomized Microseal', 
       description: 'Teknologi microseal teratomisasi untuk proteksi permukaan maksimal terhadap cuaca dan abrasi.',
       detailedDescription: 'Atomized Microseal adalah pelapis pelindung ultra-tipis yang diaplikasikan dengan teknologi atomisasi. Produk ini menembus ke dalam pori-pori permukaan beton atau aspal, menciptakan penghalang yang sangat tahan terhadap air, minyak, dan abrasi. Ini secara signifikan memperpanjang umur permukaan sambil mempertahankan penampilan aslinya.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/xtCFdDSf/Atomized-Microseal.png', 
       hint: 'surface protection' 
     },
     { 
@@ -136,7 +136,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'Coldplast', 
       description: 'Material perkerasan dingin termoplastik untuk marka jalan, area parkir, dan zona pejalan kaki.',
       detailedDescription: 'Coldplast adalah material marka jalan dua komponen yang diaplikasikan dingin, memberikan daya tahan dan visibilitas yang luar biasa. Tidak seperti termoplastik panas, produk ini tidak memerlukan pemanasan, sehingga lebih aman dan lebih cepat diaplikasikan. Ideal untuk zebra cross, garis berhenti, dan simbol marka jalan lainnya.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/twD3rX7s/Coldplast-CH-33.png', 
       hint: 'road marking' 
     },
     { 
@@ -144,7 +144,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'SAMI Waterproofing', 
       description: 'Sistem membran interlayer penyerap stres untuk waterproofing jalan dan jembatan.',
       detailedDescription: 'SAMI (Stress Absorbing Membrane Interlayer) adalah sistem waterproofing canggih untuk perkerasan aspal, terutama pada jembatan. Ini berfungsi sebagai lapisan peredam stres dan penghalang air antara lapisan pondasi dan lapisan permukaan, mencegah retak reflektif dan kerusakan akibat penetrasi air, sehingga memperpanjang umur infrastruktur secara signifikan.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/B2rzprWy/S-A-M-I-Waterproofing.png', 
       hint: 'waterproofing membrane' 
     },
     { 
@@ -152,7 +152,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'Coating', 
       description: 'Berbagai jenis pelapis pelindung industrial untuk daya tahan ekstra pada beton dan baja.',
       detailedDescription: 'Kami menyediakan berbagai solusi coating industrial, termasuk epoxy, polyurethane, dan polyurea, yang dirancang untuk melindungi permukaan beton dan baja dari korosi, abrasi, bahan kimia, dan benturan. Aplikasi meliputi lantai pabrik, area parkir, tangki penyimpanan, dan struktur baja, memberikan hasil akhir yang tahan lama dan estetis.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/DgLG0882/Coating-CH-34.png', 
       hint: 'protective coating' 
     },
     { 
@@ -160,7 +160,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'Geone', 
       description: 'Produk geosintetik untuk stabilisasi dan perkuatan tanah pada proyek konstruksi.',
       detailedDescription: 'Geone adalah rangkaian produk geosintetik kami, termasuk geotekstil, geogrid, dan geokomposit. Produk-produk ini digunakan dalam aplikasi teknik sipil untuk perkuatan tanah, stabilisasi lereng, drainase bawah permukaan, dan filtrasi. Geone membantu meningkatkan kinerja struktur tanah dan mengurangi biaya konstruksi.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/zVZP1FMG/geone.png', 
       hint: 'geosynthetics material' 
     },
     { 
@@ -168,7 +168,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: 'Marka Jalan', 
       description: 'Cat marka jalan termoplastik dan coldplastic berkualitas tinggi untuk visibilitas dan keselamatan.',
       detailedDescription: 'Kami menawarkan solusi lengkap untuk marka jalan, termasuk cat termoplastik yang diaplikasikan panas dan cat coldplastic. Kedua jenis produk ini memberikan retroreflektivitas tinggi untuk visibilitas malam hari, daya tahan yang sangat baik, dan waktu pengeringan yang cepat untuk meminimalkan gangguan lalu lintas. Tersedia dalam berbagai warna sesuai standar.',
-      imgSrc: 'https://placehold.co/600x400.png', 
+      imgSrc: 'https://i.ibb.co/9kWqnrhN/Marka-CH-32.png', 
       hint: 'road paint' 
     },
   ]

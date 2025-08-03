@@ -8,28 +8,28 @@ import { cn } from '@/lib/utils';
 
 const productCategories = {
   'Microsurfacing': [
-    { title: <>Microsurfacing CH-15<sup>TM</sup></>, description: 'Microsurfacing CH-15™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
-    { title: <>Microsurfacing CH-17<sup>TM</sup></>, description: 'Microsurfacing CH-17™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
-    { title: <>Microsurfacing CH-19<sup>TM</sup></>, description: 'Microsurfacing CH-19™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
-    { title: <>Microsurfacing CH-21<sup>TM</sup></>, description: 'Microsurfacing CH-21™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
-    { title: <>Microsurfacing CH-23<sup>TM</sup></>, description: 'Microsurfacing CH-23™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-15<sup>TM</sup></>, description: 'Lapisan tipis untuk preservasi jalan dengan lalu lintas rendah.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-17<sup>TM</sup></>, description: 'Solusi ideal untuk jalan dengan volume lalu lintas sedang, meningkatkan daya tahan.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road construction' },
+    { title: <>Microsurfacing CH-19<sup>TM</sup></>, description: 'Perlindungan maksimal untuk jalan raya dan arteri utama dengan lalu lintas padat.', imgSrc: 'https://placehold.co/600x400.png', hint: 'highway maintenance' },
+    { title: <>Microsurfacing CH-21<sup>TM</sup></>, description: 'Diformulasikan khusus untuk kondisi cuaca ekstrem dan beban berat.', imgSrc: 'https://placehold.co/600x400.png', hint: 'heavy duty road' },
+    { title: <>Microsurfacing CH-23<sup>TM</sup></>, description: 'Pilihan premium untuk proyek bandara dan sirkuit balap yang membutuhkan presisi tinggi.', imgSrc: 'https://placehold.co/600x400.png', hint: 'airport runway' },
   ],
   'Coldmix': [
-    { title: 'Coldmix', description: 'Campuran aspal dingin untuk perbaikan jalan yang praktis dan cepat.', imgSrc: 'https://placehold.co/600x400.png', hint: 'asphalt repair' },
-    { title: 'Coldplast', description: 'Material perkerasan dingin untuk aplikasi marka jalan dan lainnya.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road marking' },
+    { title: 'Coldmix', description: 'Campuran aspal dingin siap pakai untuk perbaikan jalan yang cepat dan efisien.', imgSrc: 'https://placehold.co/600x400.png', hint: 'asphalt repair' },
+    { title: 'Coldplast', description: 'Material perkerasan dingin termoplastik untuk marka jalan, area parkir, dan zona pejalan kaki.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road marking' },
   ],
   'Ecobeton': [
-    { title: 'Ecobeton', description: 'Solusi beton ramah lingkungan dengan performa tinggi.', imgSrc: 'https://placehold.co/600x400.png', hint: 'eco concrete' },
+    { title: 'Ecobeton', description: 'Solusi beton ramah lingkungan dengan kekuatan superior dan jejak karbon rendah.', imgSrc: 'https://placehold.co/600x400.png', hint: 'eco concrete' },
   ],
   'Sabda Seal': [
-    { title: 'Sabda Seal', description: 'Pelapis kedap air berkualitas untuk berbagai aplikasi konstruksi.', imgSrc: 'https://placehold.co/600x400.png', hint: 'waterproofing seal' },
-    { title: 'SAMI Waterproofing', description: 'Sistem membran interlayer penyerap stres untuk waterproofing.', imgSrc: 'https://placehold.co/600x400.png', hint: 'waterproofing membrane' },
+    { title: 'Sabda Seal', description: 'Pelapis kedap air berkualitas tinggi untuk melindungi atap, dinding, dan area basah dari kebocoran.', imgSrc: 'https://placehold.co/600x400.png', hint: 'waterproofing seal' },
+    { title: 'SAMI Waterproofing', description: 'Sistem membran interlayer penyerap stres untuk waterproofing jalan dan jembatan.', imgSrc: 'https://placehold.co/600x400.png', hint: 'waterproofing membrane' },
   ],
   'Produk Spesial': [
-    { title: 'Atomized Microseal', description: 'Teknologi microseal teratomisasi untuk proteksi permukaan maksimal.', imgSrc: 'https://placehold.co/600x400.png', hint: 'surface protection' },
-    { title: 'Coating', description: 'Berbagai jenis pelapis pelindung untuk daya tahan ekstra.', imgSrc: 'https://placehold.co/600x400.png', hint: 'protective coating' },
-    { title: 'Geone', description: 'Produk geosintetik untuk stabilisasi dan perkuatan tanah.', imgSrc: 'https://placehold.co/600x400.png', hint: 'geosynthetics material' },
-    { title: 'Marka Jalan', description: 'Cat marka jalan berkualitas tinggi untuk keselamatan lalu lintas.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paint' },
+    { title: 'Atomized Microseal', description: 'Teknologi microseal teratomisasi untuk proteksi permukaan maksimal terhadap cuaca dan abrasi.', imgSrc: 'https://placehold.co/600x400.png', hint: 'surface protection' },
+    { title: 'Coating', description: 'Berbagai jenis pelapis pelindung industrial untuk daya tahan ekstra pada beton dan baja.', imgSrc: 'https://placehold.co/600x400.png', hint: 'protective coating' },
+    { title: 'Geone', description: 'Produk geosintetik untuk stabilisasi dan perkuatan tanah pada proyek konstruksi.', imgSrc: 'https://placehold.co/600x400.png', hint: 'geosynthetics material' },
+    { title: 'Marka Jalan', description: 'Cat marka jalan termoplastik dan coldplastic berkualitas tinggi untuk visibilitas dan keselamatan.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paint' },
   ]
 };
 

@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Share2, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -12,6 +13,12 @@ const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export default function ContactSection() {
   return (
     <section id="kontak" className="py-16 md:py-24 relative overflow-hidden bg-secondary">
+        <Image
+            src="https://i.ibb.co/gMY7DwBY/hero-3.png"
+            alt="background"
+            fill
+            className="object-cover z-0 opacity-10"
+        />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div className="text-secondary-foreground">
@@ -35,7 +42,7 @@ export default function ContactSection() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <Card className="w-full max-w-md p-8 shadow-2xl">
+                    <Card className="w-full max-w-md p-8 shadow-2xl bg-card/80 backdrop-blur-sm">
                         <CardContent className="flex flex-col items-center text-center p-0">
                             <div className="p-4 bg-primary/20 rounded-full mb-4">
                                 <Share2 className="w-12 h-12 text-primary" />

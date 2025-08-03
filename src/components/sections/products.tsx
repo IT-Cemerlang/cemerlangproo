@@ -32,7 +32,7 @@ export default function ProductsSection() {
               </CardHeader>
               <CardContent className="p-6">
                 <CardTitle className="text-xl mb-2 text-primary">{product.title}</CardTitle>
-                <CardDescription>{product.description}</CardDescription>
+                <CardDescription className="text-justify">{product.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

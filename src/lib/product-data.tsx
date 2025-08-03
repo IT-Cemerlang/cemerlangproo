@@ -72,12 +72,28 @@ export const productCategories: { [key: string]: Product[] } = {
   ],
   'Ecobeton': [
     { 
-      slug: 'ecobeton',
-      title: 'Ecobeton', 
-      description: 'Solusi beton ramah lingkungan dengan kekuatan superior dan jejak karbon rendah untuk konstruksi berkelanjutan.',
-      detailedDescription: 'Ecobeton adalah inovasi dalam teknologi beton yang ramah lingkungan. Dengan menggunakan bahan baku daur ulang dan aditif khusus, produk ini secara signifikan mengurangi jejak karbon dibandingkan beton konvensional, sambil tetap memberikan kekuatan, daya tahan, dan kemudahan kerja yang superior. Pilihan tepat untuk proyek bangunan hijau dan konstruksi berkelanjutan.',
+      slug: 'ecobeton-chrono',
+      title: <>Ecobeton Chrono&trade;</>, 
+      description: 'Beton cepat kering untuk perbaikan yang efisien dan proyek dengan jadwal ketat.',
+      detailedDescription: 'Ecobeton Chrono™ adalah solusi beton inovatif yang dirancang untuk pengeringan super cepat, memungkinkan area yang diperbaiki dapat digunakan kembali dalam hitungan jam. Ideal untuk perbaikan jalan, lantai industri, dan proyek yang memerlukan waktu pengerjaan minimal.',
       imgSrc: 'https://placehold.co/600x400.png', 
-      hint: 'eco concrete' 
+      hint: 'fast setting concrete' 
+    },
+    { 
+      slug: 'ecobeton-paveshield-chrono',
+      title: <>Ecobeton Paveshield Chrono&trade;</>, 
+      description: 'Pelindung permukaan perkerasan yang cepat kering dan tahan lama.',
+      detailedDescription: 'Ecobeton Paveshield Chrono™ adalah pelapis pelindung transparan yang cepat kering untuk perkerasan beton. Produk ini meningkatkan ketahanan terhadap abrasi, noda, dan cuaca, sekaligus mempertahankan tampilan alami beton. Cocok untuk trotoar, area parkir, dan plaza.',
+      imgSrc: 'https://placehold.co/600x400.png', 
+      hint: 'pavement shield' 
+    },
+    { 
+      slug: 'ecobeton-vetrofluid',
+      title: <>Ecobeton Vetrofluid&trade;</>, 
+      description: 'Pelapis multifungsi untuk proteksi, pengerasan, dan waterproofing beton.',
+      detailedDescription: 'Ecobeton Vetrofluid™ adalah larutan berbasis silikat yang meresap ke dalam beton, memberikan perlindungan permanen dari dalam. Produk ini mengeraskan permukaan, membuatnya kedap air, dan melindunginya dari kerusakan akibat siklus beku-cair serta bahan kimia. Solusi lengkap untuk durabilitas beton jangka panjang.',
+      imgSrc: 'https://placehold.co/600x400.png', 
+      hint: 'concrete protection' 
     },
   ],
   'Sabda Seal': [

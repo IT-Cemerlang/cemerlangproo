@@ -40,7 +40,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center flex-shrink-0">
-          <Image src="https://i.ibb.co/SX8LnnF1/Logo-cemerlang-Ok-removebg-preview.png" alt="Cemerlang Group Logo" width={180} height={40} className="h-10 w-auto" />
+          <Image src="https://i.ibb.co/SX8LnnF1/Logo-cemerlang-Ok-removebg-preview.png" alt="Cemerlang Group Logo" width={200} height={50} className="h-12 w-auto" />
         </Link>
 
         <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
@@ -73,7 +73,7 @@ export default function Header() {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-8">
                     <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                        <Image src="https://i.ibb.co/SX8LnnF1/Logo-cemerlang-Ok-removebg-preview.png" alt="Cemerlang Group Logo" width={150} height={33} className="h-8 w-auto" />
+                        <Image src="https://i.ibb.co/SX8LnnF1/Logo-cemerlang-Ok-removebg-preview.png" alt="Cemerlang Group Logo" width={180} height={45} className="h-10 w-auto" />
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                         <X className="h-6 w-6" />

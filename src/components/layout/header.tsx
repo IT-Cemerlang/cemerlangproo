@@ -13,7 +13,7 @@ const navLinks = [
   { name: 'Direksi', href: '#direksi' },
   { name: 'Produk', href: '#produk' },
   { name: 'Proyek', href: '#proyek' },
-  { name: 'Artikel', href: '#artikel' },
+  { name: 'Blog', href: '#blog' },
   { name: 'Kontak', href: '#kontak' },
 ];
 

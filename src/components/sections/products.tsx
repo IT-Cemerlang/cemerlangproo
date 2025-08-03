@@ -8,8 +8,11 @@ import { cn } from '@/lib/utils';
 
 const productCategories = {
   'Microsurfacing': [
-    { title: 'Microsurfacing', description: 'Lapisan tipis untuk pemeliharaan permukaan jalan yang aus.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
-    { title: 'Atomized Microseal', description: 'Teknologi microseal teratomisasi untuk proteksi permukaan maksimal.', imgSrc: 'https://placehold.co/600x400.png', hint: 'surface protection' },
+    { title: <>Microsurfacing CH-15<sup>TM</sup></>, description: 'Microsurfacing CH-15™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-17<sup>TM</sup></>, description: 'Microsurfacing CH-17™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-19<sup>TM</sup></>, description: 'Microsurfacing CH-19™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-21<sup>TM</sup></>, description: 'Microsurfacing CH-21™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
+    { title: <>Microsurfacing CH-23<sup>TM</sup></>, description: 'Microsurfacing CH-23™', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paving' },
   ],
   'Coldmix': [
     { title: 'Coldmix', description: 'Campuran aspal dingin untuk perbaikan jalan yang praktis dan cepat.', imgSrc: 'https://placehold.co/600x400.png', hint: 'asphalt repair' },
@@ -23,6 +26,7 @@ const productCategories = {
     { title: 'SAMI Waterproofing', description: 'Sistem membran interlayer penyerap stres untuk waterproofing.', imgSrc: 'https://placehold.co/600x400.png', hint: 'waterproofing membrane' },
   ],
   'Produk Spesial': [
+    { title: 'Atomized Microseal', description: 'Teknologi microseal teratomisasi untuk proteksi permukaan maksimal.', imgSrc: 'https://placehold.co/600x400.png', hint: 'surface protection' },
     { title: 'Coating', description: 'Berbagai jenis pelapis pelindung untuk daya tahan ekstra.', imgSrc: 'https://placehold.co/600x400.png', hint: 'protective coating' },
     { title: 'Geone', description: 'Produk geosintetik untuk stabilisasi dan perkuatan tanah.', imgSrc: 'https://placehold.co/600x400.png', hint: 'geosynthetics material' },
     { title: 'Marka Jalan', description: 'Cat marka jalan berkualitas tinggi untuk keselamatan lalu lintas.', imgSrc: 'https://placehold.co/600x400.png', hint: 'road paint' },
@@ -30,6 +34,11 @@ const productCategories = {
 };
 
 const allProducts = Object.values(productCategories).flat();
+
+// A simple type guard for our product titles
+function isReactElement(value: any): value is React.ReactElement {
+    return value && typeof value === 'object' && 'props' in value;
+}
 
 export default function ProductsSection() {
   const [activeTab, setActiveTab] = useState('Semua');
@@ -61,11 +70,11 @@ export default function ProductsSection() {
               transition={{ duration: 0.3 }}
               className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
             >
-              {productsToShow.map((product) => (
-                <Card key={product.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {productsToShow.map((product, index) => (
+                <Card key={isReactElement(product.title) ? `product-${index}` : product.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardHeader className="p-0">
                     <div className="relative w-full h-48">
-                      <Image src={product.imgSrc} alt={product.title} fill className="object-cover" data-ai-hint={product.hint} />
+                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title} fill className="object-cover" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>
                   <CardContent className="p-6">

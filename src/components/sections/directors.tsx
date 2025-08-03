@@ -2,10 +2,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const directors = [
-  { name: 'Dr. H. Bambang Subroto', title: 'Komisaris Utama', imgSrc: 'https://placehold.co/128x128.png', hint: 'male headshot' },
-  { name: 'Ir. Rina Wulandari, M.Sc.', title: 'Direktur Utama', imgSrc: 'https://placehold.co/128x128.png', hint: 'female headshot' },
-  { name: 'Ahmad Prasetyo, S.E.', title: 'Direktur Keuangan', imgSrc: 'https://placehold.co/128x128.png', hint: 'male headshot' },
-  { name: 'Siti Hartati, S.T.', title: 'Direktur Operasional', imgSrc: 'https://placehold.co/128x128.png', hint: 'female headshot' },
+  { name: 'Lois Josca Danoes', title: 'CRO', imgSrc: 'https://placehold.co/128x128.png', hint: 'person headshot' },
+  { name: 'Kasih M.M Danoes', title: 'COO', imgSrc: 'https://placehold.co/128x128.png', hint: 'person headshot' },
 ];
 
 export default function DirectorsSection() {
@@ -16,7 +14,7 @@ export default function DirectorsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Dewan Direksi</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Tim kepemimpinan kami yang berdedikasi dan berpengalaman.</p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {directors.map((director) => (
             <Card key={director.name} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="flex flex-col items-center pt-6">

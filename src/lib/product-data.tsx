@@ -58,7 +58,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Coldmix CH-24&trade;</>, 
       description: 'Campuran aspal dingin premium untuk perbaikan cepat pada jalan dengan lalu lintas sedang.',
       detailedDescription: 'Coldmix CH-24™ adalah solusi perbaikan jalan yang efisien untuk area dengan lalu lintas sedang. Diformulasikan untuk kekuatan dan daya tahan yang lebih baik, produk ini memungkinkan perbaikan lubang dan retakan yang cepat dan tahan lama, bahkan dalam kondisi cuaca yang kurang ideal.',
-      imgSrc: 'https://i.ibb.co/tPw1vW2Q/Microsurfacing-CH-15.png', 
+      imgSrc: 'https://i.ibb.co/36xmmf9/Coldmix-CH-24-e.png', 
       hint: 'asphalt patch' 
     },
     { 
@@ -66,7 +66,7 @@ export const productCategories: { [key: string]: Product[] } = {
       title: <>Coldmix CH-28&trade;</>, 
       description: 'Solusi aspal dingin heavy-duty untuk perbaikan area industri dan jalan dengan lalu lintas berat.',
       detailedDescription: 'Coldmix CH-28™ dirancang khusus untuk menangani beban berat dan lalu lintas padat. Sebagai solusi perbaikan yang sangat kuat, produk ini ideal untuk jalan raya, kawasan industri, dan area lain yang membutuhkan daya tahan ekstra tanpa proses pemanasan.',
-      imgSrc: 'https://i.ibb.co/6JBSzqKn/Microsurfacing-CH-17.png', 
+      imgSrc: 'https://i.ibb.co/93ZZhzVw/Coldmix-CH-28-e.png', 
       hint: 'industrial asphalt' 
     },
   ],

@@ -16,15 +16,15 @@ export default function ContactSection() {
                     <div className="mt-8 space-y-4">
                         <div className="flex items-center gap-4">
                             <MapPin className="w-6 h-6 text-primary flex-shrink-0" />
-                            <span>Jl. Jenderal Sudirman Kav. 52-53, Jakarta Selatan, Indonesia</span>
+                            <span>PLAZA MEBEL #31-35 Jl. RS Fatmawati Kav 5, Cipete Utara, Kebayoran Baru, RT.1/RW.2, Gandaria Selatan, RT.1/RW.2, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12420 - Indonesia</span>
                         </div>
                         <div className="flex items-center gap-4">
                             <Phone className="w-6 h-6 text-primary flex-shrink-0" />
-                            <span>(021) 1234 5678</span>
+                            <span>(021) 38805294</span>
                         </div>
                         <div className="flex items-center gap-4">
                             <Mail className="w-6 h-6 text-primary flex-shrink-0" />
-                            <span>kontak@cemerlang.co.id</span>
+                            <span>info@cemerlang.pro</span>
                         </div>
                     </div>
                 </div>

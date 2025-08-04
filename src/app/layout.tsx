@@ -39,10 +39,15 @@ export default function RootLayout({
           href="https://wa.me/6287880571288"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed right-4 top-1/2 -translate-y-1/2 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+          className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center group"
           aria-label="Chat on WhatsApp"
         >
-          <WhatsAppIcon className="w-8 h-8" />
+          <div className="bg-green-500 text-white p-3 rounded-full shadow-lg group-hover:bg-green-600 transition-colors">
+            <WhatsAppIcon className="w-8 h-8" />
+          </div>
+          <span className="mt-2 text-xs bg-black/70 text-white px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Hubungi Admin
+          </span>
         </Link>
       </body>
     </html>

@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const directors = [
   { name: 'Lois Josca Danoes', title: 'CEO', imgSrc: 'https://i.ibb.co/HfYMcwhc/Josca.png', hint: 'person headshot' },
-  { name: 'Kasih M.M Danoes', title: 'COO', imgSrc: 'https://placehold.co/128x128.png', hint: 'person headshot' },
+  { name: 'Kasih M.M Danoes', title: 'COO', imgSrc: 'https://i.ibb.co/KPMZrSw/Kasih.png', hint: 'person headshot' },
 ];
 
 export default function DirectorsSection() {

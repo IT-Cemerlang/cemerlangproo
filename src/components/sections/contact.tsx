@@ -51,27 +51,27 @@ export default function ContactSection() {
                             <p className="text-muted-foreground mb-6">Ikuti kami di media sosial untuk mendapatkan pembaruan terbaru.</p>
                             <div className="flex justify-center gap-4">
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="#" aria-label="Facebook">
+                                    <Link href="https://www.facebook.com/profile.php?id=61577741040817" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                                         <Facebook className="w-5 h-5" />
                                     </Link>
                                 </Button>
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="#" aria-label="Instagram">
+                                    <Link href="https://www.instagram.com/group.cemerlang/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                                         <Instagram className="w-5 h-5" />
                                     </Link>
                                 </Button>
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="#" aria-label="YouTube">
+                                    <Link href="https://www.youtube.com/@Cemerlang-pro" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
                                         <Youtube className="w-5 h-5" />
                                     </Link>
                                 </Button>
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="#" aria-label="TikTok">
+                                    <Link href="https://www.tiktok.com/@cemerlangpro" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
                                         <TikTokIcon className="w-5 h-5" />
                                     </Link>
                                 </Button>
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="#" aria-label="LinkedIn">
+                                    <Link href="https://www.linkedin.com/in/cemerlang-group-289b60370/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                                         <Linkedin className="w-5 h-5" />
                                     </Link>
                                 </Button>

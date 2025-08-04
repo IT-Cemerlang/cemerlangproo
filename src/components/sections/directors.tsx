@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const directors = [
-  { name: 'Lois Josca Danoes', title: 'CEO', imgSrc: 'https://placehold.co/128x128.png', hint: 'person headshot' },
+  { name: 'Lois Josca Danoes', title: 'CEO', imgSrc: 'https://i.ibb.co/HfYMcwhc/Josca.png', hint: 'person headshot' },
   { name: 'Kasih M.M Danoes', title: 'COO', imgSrc: 'https://placehold.co/128x128.png', hint: 'person headshot' },
 ];
 

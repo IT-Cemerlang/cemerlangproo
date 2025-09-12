@@ -23,10 +23,7 @@ export default function AboutSection() {
               Visi kami adalah menjadi mitra terpercaya dalam pembangunan masa depan yang berkelanjutan. Dengan tim ahli yang berpengalaman, kami terus mendorong batas-batas kemungkinan untuk menciptakan nilai bagi klien, masyarakat, dan seluruh pemangku kepentingan.
             </p>
             <p className="text-muted-foreground text-justify">
-              Kami percaya bahwa fondasi dari setiap proyek besar adalah material berkualitas dan integritas tanpa kompromi. Oleh karena itu, kami berkomitmen untuk menyediakan produk-produk unggulan seperti Microsurfacing, Coldmix, dan aneka pelapis pelindung yang tidak hanya memenuhi, tetapi juga melampaui standar industri.
-            </p>
-            <p className="text-muted-foreground text-justify">
-              Inovasi adalah DNA kami. Kami secara konsisten berinvestasi dalam riset dan pengembangan untuk menghadirkan teknologi terbarukan yang lebih efisien, ramah lingkungan, dan tahan lama. Bersama Cemerlang Group, Anda membangun di atas fondasi yang kuat untuk masa depan yang lebih baik.
+              Kami percaya bahwa fondasi dari setiap proyek besar adalah material berkualitas dan integritas tanpa kompromi. Oleh karena itu, kami berkomitmen untuk menyediakan produk-produk unggulan yang tidak hanya memenuhi, tetapi juga melampaui standar industri.
             </p>
           </div>
         </div>

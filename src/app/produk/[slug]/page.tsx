@@ -52,13 +52,13 @@ export default function ProductDetailPage() {
             Kembali ke Produk
           </Button>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg border border-white">
               <Image
                 src={product.imgSrc}
                 alt={productTitle}
                 fill
-                className="object-contain"
+                className="object-cover"
                 data-ai-hint={product.hint}
               />
             </div>

@@ -37,17 +37,17 @@ export default function ProductsSection() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {productsToShow.map((product, index) => (
-                <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col p-6">
                   <CardHeader className="p-0">
-                    <div className="relative w-full aspect-square bg-white">
+                    <div className="relative w-full aspect-square bg-white rounded-md overflow-hidden">
                       <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain p-2" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 flex-grow">
+                  <CardContent className="p-0 pt-6 flex-grow">
                     <CardTitle className="text-xl mb-2 text-primary">{product.title}</CardTitle>
                     <CardDescription className="text-justify">{product.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0 mt-auto">
+                  <CardFooter className="p-0 pt-6 mt-auto">
                     <Button asChild variant="link" className="p-0 h-auto text-primary">
                       <Link href={`/produk/${product.slug}`}>
                         Selengkapnya <ArrowRight className="ml-2 h-4 w-4" />

@@ -38,8 +38,8 @@ export default function ProductsSection() {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
               {productsToShow.map((product, index) => (
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                  <CardHeader className="p-6 pb-0">
-                    <div className="relative w-full aspect-square h-60">
+                  <CardHeader className="p-0">
+                    <div className="relative w-full aspect-square">
                       <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>

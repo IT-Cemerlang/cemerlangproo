@@ -25,8 +25,8 @@ export default function DirectorsSection() {
           {directors.map((director) => (
             <Card key={director.name} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80 backdrop-blur-sm">
               <CardContent className="flex flex-col items-center pt-6">
-                <Avatar className="w-32 h-32 mb-4 border-4 border-primary">
-                  <AvatarImage src={director.imgSrc} alt={director.name} data-ai-hint={director.hint} />
+                <Avatar className="w-40 h-40 mb-4 border-4 border-primary">
+                  <AvatarImage src={director.imgSrc} alt={director.name} data-ai-hint={director.hint} className="object-cover"/>
                   <AvatarFallback>{director.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
                 <h3 className="text-lg font-semibold text-primary">{director.name}</h3>

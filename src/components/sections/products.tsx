@@ -40,7 +40,7 @@ export default function ProductsSection() {
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card">
                   <CardHeader className="p-6 pb-0">
                     <div className="relative w-full aspect-square rounded-md overflow-hidden border border-white">
-                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain" data-ai-hint={product.hint} />
+                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-cover" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 flex-grow">

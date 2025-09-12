@@ -47,18 +47,18 @@ export default function ProductDetailPage() {
       <Header />
       <main className="flex-1 py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <Button variant="outline" onClick={() => router.back()} className="mb-8">
+          <Button variant="outline" onClick={() => router.push('/#produk')} className="mb-8">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Kembali ke Produk
           </Button>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+            <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg bg-white p-4 flex items-center justify-center">
               <Image
                 src={product.imgSrc}
                 alt={productTitle}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={product.hint}
               />
             </div>

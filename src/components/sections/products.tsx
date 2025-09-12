@@ -39,8 +39,8 @@ export default function ProductsSection() {
               {productsToShow.map((product, index) => (
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
                   <CardHeader className="p-0">
-                    <div className="relative w-full h-48">
-                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain" data-ai-hint={product.hint} />
+                    <div className="relative w-full aspect-square">
+                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain p-4" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 flex-grow">

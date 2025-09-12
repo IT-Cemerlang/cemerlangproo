@@ -39,7 +39,7 @@ export default function ProductsSection() {
               {productsToShow.map((product, index) => (
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col p-6">
                   <CardHeader className="p-0">
-                    <div className="relative w-full aspect-square bg-white rounded-md overflow-hidden">
+                    <div className="relative w-full aspect-square rounded-md overflow-hidden">
                       <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain p-2" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>

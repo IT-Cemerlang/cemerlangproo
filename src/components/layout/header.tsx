@@ -24,6 +24,7 @@ export default function Header() {
     { name: t('navProyek'), href: '#proyek' },
     { name: t('navKlien'), href: '#klien' },
     { name: t('navKegiatan'), href: '#kegiatan' },
+    { name: t('navKontak'), href: '#kontak' },
   ];
 
   useEffect(() => {
@@ -60,9 +61,6 @@ export default function Header() {
         
         <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
-            <Button variant="outline" asChild className="border-white text-white hover:bg-white/10">
-                <a href="#kontak">{t('hubungiKami')}</a>
-            </Button>
         </div>
 
         <div className="md:hidden">
@@ -95,7 +93,6 @@ export default function Header() {
                       {link.name}
                     </a>
                   ))}
-                   <a href="#kontak" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium transition-colors hover:text-primary">{t('hubungiKami')}</a>
                    <div className="mt-4">
                      <LanguageSwitcher />
                    </div>

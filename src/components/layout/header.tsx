@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import LanguageSwitcher from '@/components/language-switcher';
 
 const navLinks = [
   { name: 'Beranda', href: '#beranda' },
@@ -55,7 +56,8 @@ export default function Header() {
           ))}
         </nav>
         
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <Button variant="outline" asChild className="border-white text-white hover:bg-white/10">
                 <a href="#kontak">Hubungi Kami</a>
             </Button>
@@ -92,6 +94,9 @@ export default function Header() {
                     </a>
                   ))}
                    <a href="#kontak" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium transition-colors hover:text-primary">Hubungi Kami</a>
+                   <div className="mt-4">
+                     <LanguageSwitcher />
+                   </div>
                 </nav>
               </div>
             </SheetContent>

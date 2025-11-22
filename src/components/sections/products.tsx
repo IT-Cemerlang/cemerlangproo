@@ -35,20 +35,26 @@ export default function ProductsSection() {
             ))}
           </TabsList>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
               {productsToShow.map((product, index) => (
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card">
-                  <CardHeader className="p-6 pb-4">
-                    <div className="relative w-full aspect-square rounded-md overflow-hidden border border-white">
-                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain p-2" data-ai-hint={product.hint} />
+                  <CardHeader className="p-4">
+                    <div className="relative w-full aspect-square rounded-md overflow-hidden bg-white">
+                      <Image 
+                        src={product.imgSrc} 
+                        alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} 
+                        fill 
+                        className="object-contain p-1"
+                        data-ai-hint={product.hint} 
+                      />
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 pt-0 flex-grow">
-                    <CardTitle className="text-xl mb-2 text-primary h-12 flex items-center">{product.title}</CardTitle>
-                    <CardDescription className="text-justify h-24 overflow-hidden">{product.description}</CardDescription>
+                  <CardContent className="p-4 pt-0 flex-grow flex flex-col">
+                    <CardTitle className="text-lg mb-2 text-primary h-12 flex items-center justify-center text-center">{product.title}</CardTitle>
+                    <CardDescription className="text-justify text-sm h-24 overflow-hidden">{product.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className="p-6 pt-0 mt-auto">
-                    <Button asChild variant="link" className="p-0 h-auto text-primary">
+                  <CardFooter className="p-4 pt-0 mt-auto">
+                    <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">
                       <Link href={`/produk/${product.slug}`}>
                         Selengkapnya <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>

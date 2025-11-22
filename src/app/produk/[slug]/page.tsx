@@ -53,16 +53,16 @@ export default function ProductDetailPage() {
           </Button>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
+            <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg border border-white">
               <Image
                 src={product.imgSrc}
                 alt={productTitle}
                 fill
-                className="object-cover"
+                className="object-contain p-1"
                 data-ai-hint={product.hint}
               />
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 flex flex-col justify-center h-full">
               <h1 className="text-3xl md:text-4xl font-bold text-primary font-headline">{product.title}</h1>
               <p className="text-muted-foreground text-justify text-lg">
                 {product.detailedDescription}

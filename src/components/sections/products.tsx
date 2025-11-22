@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { productCategories, allProducts } from '@/lib/product-data';
+import { productCategories, allProducts, Product } from '@/lib/product-data';
 import { useLanguage } from '@/lib/translations';
 
 // A simple type guard for our product titles
@@ -19,7 +19,15 @@ export default function ProductsSection() {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('Semua');
 
-  const productsToShow = activeTab === 'Semua' ? allProducts : productCategories[activeTab as keyof typeof productCategories] || [];
+  const getTranslatedProduct = (product: Product) => {
+    return {
+      ...product,
+      title: t(product.titleKey),
+      description: t(product.descriptionKey),
+    };
+  };
+
+  const productsToShow = (activeTab === 'Semua' ? allProducts : productCategories[activeTab as keyof typeof productCategories] || []).map(getTranslatedProduct);
 
   return (
     <section id="produk" className="py-16 md:py-24 bg-card">
@@ -39,12 +47,12 @@ export default function ProductsSection() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
               {productsToShow.map((product, index) => (
-                <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card">
+                <Card key={product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card">
                   <CardHeader className="p-4">
                     <div className="relative w-full aspect-square rounded-md overflow-hidden border border-white">
                       <Image 
                         src={product.imgSrc} 
-                        alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} 
+                        alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string}
                         fill 
                         className="object-cover rounded-md"
                         data-ai-hint={product.hint} 
@@ -52,7 +60,7 @@ export default function ProductsSection() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-4 pt-0 flex-grow flex flex-col">
-                    <CardTitle className="text-lg mb-2 text-primary h-12 flex items-center justify-center text-center">{product.title}</CardTitle>
+                    <CardTitle className="text-lg mb-2 text-primary h-12 flex items-center justify-center text-center" dangerouslySetInnerHTML={{ __html: product.title as string}}></CardTitle>
                     <CardDescription className="text-justify text-sm h-24 overflow-hidden">{product.description}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-4 pt-0 mt-auto">

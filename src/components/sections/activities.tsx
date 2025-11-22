@@ -8,14 +8,14 @@ import Link from 'next/link';
 import { useLanguage } from '@/lib/translations';
 
 const activities = [
-  { title: 'Audiensi di Dinas PUPR Kota Bogor', slug: 'audiensi-dinas-pupr-bogor', imgSrc: 'https://i.ibb.co/snGhLx9/Bogor.jpg', hint: 'official meeting' },
-  { title: 'Audiensi di Dinas PUPR Kota Tangerang', slug: 'audiensi-dinas-pupr-tangerang', imgSrc: 'https://i.ibb.co/m5knHvDB/Tangerang.jpg', hint: 'government building' },
-  { title: 'Audiensi di Dinas PUPR DKI Jakarta', slug: 'audiensi-dinas-pupr-dki-jakarta', imgSrc: 'https://i.ibb.co/cK2GKjVQ/PUPR-DKI.jpg', hint: 'city hall' },
-  { title: 'Audiensi di Kementerian PUPR Pusat Jakarta', slug: 'audiensi-kementerian-pupr-pusat', imgSrc: 'https://i.ibb.co/0ydK6jmg/PUPR-Pusat.jpg', hint: 'ministry building' },
-  { title: 'Mock Up Microsurfacing di Tol Becakayu', slug: 'mockup-microsurfacing-tol-becakayu', imgSrc: 'https://i.ibb.co/Fbcyf5Rj/MOCKUP-BECAKAYU-24-4-25-6.jpg', hint: 'road work' },
-  { title: 'Mock Up di Revo Mall Kota Bekasi', slug: 'mockup-revo-mall-bekasi', imgSrc: 'https://i.ibb.co/cSggnBKs/REVO-MALL-BEKASI-SURVEY-28-05-25-7.jpg', hint: 'shopping mall' },
-  { title: 'Mock Up di Pelabuhan Patimbang Subang', slug: 'mockup-pelabuhan-patimbang-subang', imgSrc: 'https://i.ibb.co/BKdXpB3b/Patimban-Subang.jpg', hint: 'seaport' },
-  { title: 'Audiensi di Dinas PUPR Kota Sawahlunto', slug: 'audiensi-dinas-pupr-sawahlunto', imgSrc: 'https://i.ibb.co/nMLq9NQ1/Sawahlunto.jpg', hint: 'official discussion' },
+  { titleKey: 'activity_1_title', slug: 'audiensi-dinas-pupr-bogor', imgSrc: 'https://i.ibb.co/snGhLx9/Bogor.jpg', hint: 'official meeting' },
+  { titleKey: 'activity_2_title', slug: 'audiensi-dinas-pupr-tangerang', imgSrc: 'https://i.ibb.co/m5knHvDB/Tangerang.jpg', hint: 'government building' },
+  { titleKey: 'activity_3_title', slug: 'audiensi-dinas-pupr-dki-jakarta', imgSrc: 'https://i.ibb.co/cK2GKjVQ/PUPR-DKI.jpg', hint: 'city hall' },
+  { titleKey: 'activity_4_title', slug: 'audiensi-kementerian-pupr-pusat', imgSrc: 'https://i.ibb.co/0ydK6jmg/PUPR-Pusat.jpg', hint: 'ministry building' },
+  { titleKey: 'activity_5_title', slug: 'mockup-microsurfacing-tol-becakayu', imgSrc: 'https://i.ibb.co/Fbcyf5Rj/MOCKUP-BECAKAYU-24-4-25-6.jpg', hint: 'road work' },
+  { titleKey: 'activity_6_title', slug: 'mockup-revo-mall-bekasi', imgSrc: 'https://i.ibb.co/cSggnBKs/REVO-MALL-BEKASI-SURVEY-28-05-25-7.jpg', hint: 'shopping mall' },
+  { titleKey: 'activity_7_title', slug: 'mockup-pelabuhan-patimbang-subang', imgSrc: 'https://i.ibb.co/BKdXpB3b/Patimban-Subang.jpg', hint: 'seaport' },
+  { titleKey: 'activity_8_title', slug: 'audiensi-dinas-pupr-sawahlunto', imgSrc: 'https://i.ibb.co/nMLq9NQ1/Sawahlunto.jpg', hint: 'official discussion' },
 ];
 
 export default function ActivitiesSection() {
@@ -32,11 +32,11 @@ export default function ActivitiesSection() {
             <Card key={activity.slug} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card">
               <CardHeader className="p-0">
                 <div className="relative w-full h-48">
-                    <Image src={activity.imgSrc} alt={activity.title} fill className="object-cover" data-ai-hint={activity.hint}/>
+                    <Image src={activity.imgSrc} alt={t(activity.titleKey as any)} fill className="object-cover" data-ai-hint={activity.hint}/>
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="text-lg text-primary text-center w-full flex-grow flex items-center justify-center">{activity.title}</CardTitle>
+                <CardTitle className="text-lg text-primary text-center w-full flex-grow flex items-center justify-center">{t(activity.titleKey as any)}</CardTitle>
               </CardContent>
               <CardFooter className="p-6 pt-0 mt-auto">
                 <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">

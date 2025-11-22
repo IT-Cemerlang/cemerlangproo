@@ -14,16 +14,25 @@ export default function ProductDetailPage() {
   const router = useRouter();
   const params = useParams();
   const [product, setProduct] = useState<Product | null>(null);
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
 
   useEffect(() => {
     if (slug) {
       const foundProduct = getProductBySlug(slug);
-      setProduct(foundProduct || null);
+      if (foundProduct) {
+        const translatedProduct = {
+          ...foundProduct,
+          title: t(foundProduct.titleKey),
+          detailedDescription: t(foundProduct.detailedDescriptionKey),
+        };
+        setProduct(translatedProduct);
+      } else {
+        setProduct(null);
+      }
     }
-  }, [slug]);
+  }, [slug, language, t]);
 
   if (!product) {
     return (
@@ -58,15 +67,15 @@ export default function ProductDetailPage() {
             <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg border border-white">
               <Image
                 src={product.imgSrc}
-                alt={productTitle}
+                alt={productTitle as string}
                 fill
                 className="object-cover"
                 data-ai-hint={product.hint}
               />
             </div>
             <div className="space-y-6 flex flex-col justify-center h-full">
-              <h1 className="text-3xl md:text-4xl font-bold text-primary font-headline">{product.title}</h1>
-              <p className="text-muted-foreground text-justify text-lg">
+              <h1 className="text-3xl md:text-4xl font-bold text-primary font-headline" dangerouslySetInnerHTML={{ __html: product.title as string}}></h1>
+              <p className="text-muted-foreground text-justify text-lg whitespace-pre-line">
                 {product.detailedDescription}
               </p>
             </div>

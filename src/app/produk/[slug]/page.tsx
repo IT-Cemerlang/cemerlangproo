@@ -58,7 +58,7 @@ export default function ProductDetailPage() {
                 src={product.imgSrc}
                 alt={productTitle}
                 fill
-                className="object-contain p-1"
+                className="object-cover"
                 data-ai-hint={product.hint}
               />
             </div>

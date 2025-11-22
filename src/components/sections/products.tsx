@@ -44,7 +44,7 @@ export default function ProductsSection() {
                         src={product.imgSrc} 
                         alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} 
                         fill 
-                        className="object-contain rounded-md p-1"
+                        className="object-cover rounded-md"
                         data-ai-hint={product.hint} 
                       />
                     </div>

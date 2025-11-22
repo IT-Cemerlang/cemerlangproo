@@ -9,6 +9,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { useLanguage } from '@/lib/translations';
 
 const clients = [
   { name: 'PT. Adhi Karya', imgSrc: 'https://i.ibb.co/Ndw0pNVd/adhi-karya.jpg', hint: 'construction company logo' },
@@ -31,13 +32,14 @@ const clients = [
 ];
 
 export default function ClientsSection() {
+  const { t } = useLanguage();
   return (
     <section id="klien" className="py-16 md:py-24 bg-card text-card-foreground">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Klien Kami</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('klienTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Dipercaya oleh berbagai perusahaan dan institusi terkemuka di Indonesia.
+            {t('klienSubtitle')}
           </p>
         </div>
         <Carousel

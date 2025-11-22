@@ -7,17 +7,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { useLanguage } from "@/lib/translations";
 
 export default function LanguageSwitcher() {
-  // This is a placeholder. In a real app, you'd use a i18n library
-  // and have state to change the language.
+  const { language, setLanguage } = useLanguage();
+
   const handleLanguageChange = (lang: string) => {
-    // router.push(pathname, { locale: lang })
-    alert(`Language switched to ${lang}. Implementation with a routing library is needed.`);
+    if (lang === 'id' || lang === 'en') {
+      setLanguage(lang);
+    }
   };
 
   return (
-    <Select defaultValue="id" onValueChange={handleLanguageChange}>
+    <Select value={language} onValueChange={handleLanguageChange}>
       <SelectTrigger className="w-[120px] text-white bg-transparent border-white">
         <SelectValue placeholder="Language" />
       </SelectTrigger>

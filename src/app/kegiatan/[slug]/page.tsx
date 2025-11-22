@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import { useLanguage } from '@/lib/translations';
 
 interface Activity {
   title: string;
@@ -35,6 +36,7 @@ export default function ActivityDetailPage() {
   const router = useRouter();
   const params = useParams();
   const [activity, setActivity] = useState<Activity | null>(null);
+  const { t } = useLanguage();
   
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
 
@@ -50,7 +52,7 @@ export default function ActivityDetailPage() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-1 flex items-center justify-center">
-                <p>Kegiatan tidak ditemukan.</p>
+                <p>{t('kegiatanNotFound')}</p>
             </main>
             <Footer />
         </div>
@@ -64,7 +66,7 @@ export default function ActivityDetailPage() {
         <div className="container mx-auto px-4 md:px-6">
           <Button variant="outline" onClick={() => router.push('/#kegiatan')} className="mb-8">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Kembali ke Kegiatan
+            {t('kembaliKeKegiatan')}
           </Button>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">

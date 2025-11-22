@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { productCategories, allProducts } from '@/lib/product-data';
+import { useLanguage } from '@/lib/translations';
 
 // A simple type guard for our product titles
 function isReactElement(value: any): value is React.ReactElement {
@@ -15,6 +16,7 @@ function isReactElement(value: any): value is React.ReactElement {
 }
 
 export default function ProductsSection() {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('Semua');
 
   const productsToShow = activeTab === 'Semua' ? allProducts : productCategories[activeTab as keyof typeof productCategories] || [];
@@ -23,13 +25,13 @@ export default function ProductsSection() {
     <section id="produk" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Produk &amp; Layanan</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Menawarkan beragam solusi inovatif untuk memenuhi kebutuhan Anda.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('produkTitle')}</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('produkSubtitle')}</p>
         </div>
 
         <Tabs defaultValue="Semua" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-8">
-            <TabsTrigger value="Semua">Semua</TabsTrigger>
+            <TabsTrigger value="Semua">{t('semua')}</TabsTrigger>
             {Object.keys(productCategories).map(category => (
               <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
             ))}
@@ -56,7 +58,7 @@ export default function ProductsSection() {
                   <CardFooter className="p-4 pt-0 mt-auto">
                     <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">
                       <Link href={`/produk/${product.slug}`}>
-                        Selengkapnya <ArrowRight className="ml-2 h-4 w-4" />
+                        {t('selengkapnya')} <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardFooter>

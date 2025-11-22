@@ -8,11 +8,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import { useLanguage } from '@/lib/translations';
 
 export default function ProductDetailPage() {
   const router = useRouter();
   const params = useParams();
   const [product, setProduct] = useState<Product | null>(null);
+  const { t } = useLanguage();
   
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
 
@@ -28,7 +30,7 @@ export default function ProductDetailPage() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-1 flex items-center justify-center">
-                <p>Produk tidak ditemukan.</p>
+                <p>{t('produkNotFound')}</p>
             </main>
             <Footer />
         </div>
@@ -49,7 +51,7 @@ export default function ProductDetailPage() {
         <div className="container mx-auto px-4 md:px-6">
           <Button variant="outline" onClick={() => router.push('/#produk')} className="mb-8">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Kembali ke Produk
+            {t('kembaliKeProduk')}
           </Button>
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">

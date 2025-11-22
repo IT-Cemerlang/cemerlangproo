@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from '@/lib/translations';
 
 const activities = [
   { title: 'Audiensi di Dinas PUPR Kota Bogor', slug: 'audiensi-dinas-pupr-bogor', imgSrc: 'https://i.ibb.co/snGhLx9/Bogor.jpg', hint: 'official meeting' },
@@ -18,12 +19,13 @@ const activities = [
 ];
 
 export default function ActivitiesSection() {
+  const { t } = useLanguage();
   return (
     <section id="kegiatan" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">Blog &amp; Kegiatan</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Dokumentasi kegiatan dan audiensi yang telah kami lakukan.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('kegiatanTitle')}</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('kegiatanSubtitle')}</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {activities.map((activity) => (
@@ -39,7 +41,7 @@ export default function ActivitiesSection() {
               <CardFooter className="p-6 pt-0 mt-auto">
                 <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">
                   <Link href={`/kegiatan/${activity.slug}`}>
-                    Selengkapnya <ArrowRight className="ml-2 h-4 w-4" />
+                    {t('selengkapnya')} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>

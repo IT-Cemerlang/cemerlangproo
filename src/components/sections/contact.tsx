@@ -1,8 +1,10 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Share2, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '@/lib/translations';
 
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -11,6 +13,8 @@ const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export default function ContactSection() {
+    const { t } = useLanguage();
+
   return (
     <section id="kontak" className="py-16 md:py-24 relative overflow-hidden bg-secondary">
         <Image
@@ -22,14 +26,14 @@ export default function ContactSection() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div className="text-secondary-foreground">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Siap Membangun Bersama Kami?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">{t('kontakTitle')}</h2>
                     <p className="mt-4 text-lg text-secondary-foreground/80">
-                        Hubungi kami hari ini untuk mendiskusikan proyek Anda berikutnya. Tim kami siap membantu mewujudkan visi Anda menjadi kenyataan.
+                        {t('kontakSubtitle')}
                     </p>
                     <div className="mt-8 space-y-4">
                         <div className="flex items-center gap-4">
                             <MapPin className="w-6 h-6 text-primary flex-shrink-0" />
-                            <span>PLAZA MEBEL #31-35 Jl. RS Fatmawati Kav 5, Cipete Utara, Kebayoran Baru, RT.1/RW.2, Gandaria Selatan, RT.1/RW.2, Gandaria Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12420 - Indonesia</span>
+                            <span>{t('alamat')}</span>
                         </div>
                         <div className="flex items-center gap-4">
                             <Phone className="w-6 h-6 text-primary flex-shrink-0" />
@@ -47,8 +51,8 @@ export default function ContactSection() {
                             <div className="p-4 bg-primary/20 rounded-full mb-4">
                                 <Share2 className="w-12 h-12 text-primary" />
                             </div>
-                            <h3 className="text-2xl font-bold text-primary mb-2">Terhubung dengan Kami</h3>
-                            <p className="text-muted-foreground mb-6">Ikuti kami di media sosial untuk mendapatkan pembaruan terbaru.</p>
+                            <h3 className="text-2xl font-bold text-primary mb-2">{t('terhubungDenganKami')}</h3>
+                            <p className="text-muted-foreground mb-6">{t('terhubungSubtitle')}</p>
                             <div className="flex justify-center gap-4">
                                 <Button size="icon" variant="outline" asChild>
                                     <Link href="https://www.facebook.com/profile.php?id=61577741040817" aria-label="Facebook" target="_blank" rel="noopener noreferrer">

@@ -8,21 +8,23 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import LanguageSwitcher from '@/components/language-switcher';
-
-const navLinks = [
-  { name: 'Beranda', href: '#beranda' },
-  { name: 'Tentang Kami', href: '#tentang-kami' },
-  { name: 'Direksi', href: '#direksi' },
-  { name: 'Produk', href: '#produk' },
-  { name: 'Lisensi', href: '#lisensi' },
-  { name: 'Proyek', href: '#proyek' },
-  { name: 'Klien', href: '#klien' },
-  { name: 'Kegiatan', href: '#kegiatan' },
-];
+import { useLanguage } from '@/lib/translations';
 
 export default function Header() {
+  const { t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { name: t('navBeranda'), href: '#beranda' },
+    { name: t('navTentangKami'), href: '#tentang-kami' },
+    { name: t('navDireksi'), href: '#direksi' },
+    { name: t('navProduk'), href: '#produk' },
+    { name: t('navLisensi'), href: '#lisensi' },
+    { name: t('navProyek'), href: '#proyek' },
+    { name: t('navKlien'), href: '#klien' },
+    { name: t('navKegiatan'), href: '#kegiatan' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +61,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
             <Button variant="outline" asChild className="border-white text-white hover:bg-white/10">
-                <a href="#kontak">Hubungi Kami</a>
+                <a href="#kontak">{t('hubungiKami')}</a>
             </Button>
         </div>
 
@@ -93,7 +95,7 @@ export default function Header() {
                       {link.name}
                     </a>
                   ))}
-                   <a href="#kontak" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium transition-colors hover:text-primary">Hubungi Kami</a>
+                   <a href="#kontak" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium transition-colors hover:text-primary">{t('hubungiKami')}</a>
                    <div className="mt-4">
                      <LanguageSwitcher />
                    </div>

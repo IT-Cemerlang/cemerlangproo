@@ -38,12 +38,12 @@ export default function ProductsSection() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {productsToShow.map((product, index) => (
                 <Card key={isReactElement(product.title) ? `product-${index}` : product.slug} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card">
-                  <CardHeader className="p-6 pb-0">
+                  <CardHeader className="p-6 pb-4">
                     <div className="relative w-full aspect-square rounded-md overflow-hidden border border-white">
-                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-cover" data-ai-hint={product.hint} />
+                      <Image src={product.imgSrc} alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} fill className="object-contain p-2" data-ai-hint={product.hint} />
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 flex-grow">
+                  <CardContent className="p-6 pt-0 flex-grow">
                     <CardTitle className="text-xl mb-2 text-primary h-12 flex items-center">{product.title}</CardTitle>
                     <CardDescription className="text-justify h-24 overflow-hidden">{product.description}</CardDescription>
                   </CardContent>

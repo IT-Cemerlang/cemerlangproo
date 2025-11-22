@@ -44,7 +44,7 @@ export default function ProductsSection() {
                         src={product.imgSrc} 
                         alt={isReactElement(product.title) ? `Image for product ${index}` : product.title as string} 
                         fill 
-                        className="object-contain p-1 border border-white rounded-md"
+                        className="object-contain rounded-md bg-card"
                         data-ai-hint={product.hint} 
                       />
                     </div>

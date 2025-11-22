@@ -52,8 +52,8 @@ export default function ProductDetailPage() {
             Kembali ke Produk
           </Button>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg border border-white">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
               <Image
                 src={product.imgSrc}
                 alt={productTitle}

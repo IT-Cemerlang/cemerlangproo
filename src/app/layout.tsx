@@ -45,7 +45,7 @@ export default function RootLayout({
           <div className="bg-green-500 text-white p-3 rounded-full shadow-lg group-hover:bg-green-600 transition-colors">
             <WhatsAppIcon className="w-8 h-8" />
           </div>
-          <span className="mt-2 text-xs bg-black/70 text-white px-2 py-1 rounded-md">
+          <span className="mt-2 text-xs bg-green-500 text-white px-2 py-1 rounded-md">
             Hubungi Kami
           </span>
         </Link>

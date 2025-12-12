@@ -6,7 +6,7 @@ import { LanguageProvider } from '@/lib/translations';
 import WhatsAppButton from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'Cemerlang Gateway',
+  title: 'Cemerlang Pro',
   description: 'Landing Page for Cemerlang Group',
 };
 

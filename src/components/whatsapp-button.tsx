@@ -17,7 +17,7 @@ export default function WhatsAppButton() {
     const { t } = useLanguage();
     return (
         <Link 
-            href="https://wa.me/6287880571288"
+            href="https://wa.me/6281288005933"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center group"
@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
                 <WhatsAppIcon className="w-8 h-8" />
             </div>
             <span className="mt-2 text-xs bg-green-500 text-white px-2 py-1 rounded-md">
-                {t('hubungiViaWa')}
+                {t('hubungiKami')}
             </span>
         </Link>
     );

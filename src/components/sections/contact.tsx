@@ -32,15 +32,15 @@ export default function ContactSection() {
                     </p>
                     <div className="mt-8 space-y-4">
                         <div className="flex items-center gap-4">
-                            <MapPin className="w-6 h-6 text-primary flex-shrink-0" />
+                            <MapPin className="w-6 h-6 text-white flex-shrink-0" />
                             <span>{t('alamat')}</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <Phone className="w-6 h-6 text-primary flex-shrink-0" />
+                            <Phone className="w-6 h-6 text-white flex-shrink-0" />
                             <span>(021) 38805294</span>
                         </div>
                         <div className="flex items-center gap-4">
-                            <Mail className="w-6 h-6 text-primary flex-shrink-0" />
+                            <Mail className="w-6 h-6 text-white flex-shrink-0" />
                             <span>info@cemerlang.pro</span>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function ContactSection() {
                     <Card className="w-full max-w-md p-8 shadow-2xl bg-card/80 backdrop-blur-sm">
                         <CardContent className="flex flex-col items-center text-center p-0">
                             <div className="p-4 bg-primary/20 rounded-full mb-4">
-                                <Share2 className="w-12 h-12 text-primary" />
+                                <Share2 className="w-12 h-12 text-white" />
                             </div>
                             <h3 className="text-2xl font-bold text-foreground mb-2">{t('terhubungDenganKami')}</h3>
                             <p className="text-muted-foreground mb-6">{t('terhubungSubtitle')}</p>
@@ -60,7 +60,7 @@ export default function ContactSection() {
                                     </Link>
                                 </Button>
                                 <Button size="icon" variant="outline" asChild>
-                                    <Link href="https://www.instagram.com/group.cemerlang/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://www.instagram.com/group.cemerlang/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                                         <Instagram className="w-5 h-5" />
                                     </Link>
                                 </Button>

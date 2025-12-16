@@ -25,7 +25,7 @@ export default function ProjectsSection() {
     <section id="proyek" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('proyekTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('proyekTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('proyekSubtitle')}</p>
         </div>
         <div className="grid lg:grid-cols-2 gap-8">
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
               </div>
               <div className="w-full md:w-2/3 p-6 flex flex-col justify-center">
                 <Badge variant="secondary" className="w-fit mb-2 bg-primary/20 text-primary">{t(project.categoryKey as any)}</Badge>
-                <CardTitle className="text-xl mb-2 text-primary">{t(project.titleKey as any)}</CardTitle>
+                <CardTitle className="text-xl mb-2 font-bold text-foreground">{t(project.titleKey as any)}</CardTitle>
               </div>
             </Card>
           ))}

@@ -20,7 +20,7 @@ export default function LicensesSection() {
     <section id="lisensi" className="py-16 md:py-24 bg-card text-card-foreground">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('lisensiTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('lisensiTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
             {t('lisensiSubtitle')}
           </p>
@@ -38,7 +38,7 @@ export default function LicensesSection() {
                     data-ai-hint={license.hint}
                   />
                 </div>
-                <p className="font-semibold text-center text-primary h-12 flex items-center">{license.name}</p>
+                <p className="font-bold text-center text-foreground h-12 flex items-center">{license.name}</p>
               </CardContent>
             </Card>
           ))}

@@ -33,7 +33,7 @@ export default function ProductsSection() {
     <section id="produk" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('produkTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('produkTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('produkSubtitle')}</p>
         </div>
 
@@ -60,11 +60,11 @@ export default function ProductsSection() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-4 pt-0 flex-grow flex flex-col">
-                    <CardTitle className="text-lg mb-2 text-primary h-12 flex items-center justify-center text-center" dangerouslySetInnerHTML={{ __html: product.title as string}}></CardTitle>
+                    <CardTitle className="text-lg mb-2 font-bold text-foreground h-12 flex items-center justify-center text-center" dangerouslySetInnerHTML={{ __html: product.title as string}}></CardTitle>
                     <CardDescription className="text-justify text-sm h-24 overflow-hidden">{product.description}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-4 pt-0 mt-auto">
-                    <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">
+                    <Button asChild variant="link" className="p-0 h-auto font-bold text-foreground mx-auto">
                       <Link href={`/produk/${product.slug}`}>
                         {t('selengkapnya')} <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>

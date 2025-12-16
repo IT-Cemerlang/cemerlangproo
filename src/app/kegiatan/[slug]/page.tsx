@@ -91,7 +91,7 @@ export default function ActivityDetailPage() {
               />
             </div>
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-4xl font-bold text-primary font-headline">{activity.title}</h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{activity.title}</h1>
               <p className="text-muted-foreground text-justify text-lg">
                 {activity.description}
               </p>

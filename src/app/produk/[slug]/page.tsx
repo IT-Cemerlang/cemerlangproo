@@ -74,7 +74,7 @@ export default function ProductDetailPage() {
               />
             </div>
             <div className="space-y-6 flex flex-col justify-center h-full">
-              <h1 className="text-3xl md:text-4xl font-bold text-primary font-headline" dangerouslySetInnerHTML={{ __html: product.title as string}}></h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground font-headline" dangerouslySetInnerHTML={{ __html: product.title as string}}></h1>
               <p className="text-muted-foreground text-justify text-lg whitespace-pre-line">
                 {product.detailedDescription}
               </p>

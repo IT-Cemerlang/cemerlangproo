@@ -21,7 +21,7 @@ export default function DirectorsSection() {
       />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('direksiTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('direksiTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('direksiSubtitle')}</p>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ export default function DirectorsSection() {
                   <AvatarImage src={director.imgSrc} alt={director.name} data-ai-hint={director.hint} className="object-cover"/>
                   <AvatarFallback>{director.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
-                <h3 className="text-lg font-semibold text-primary">{director.name}</h3>
+                <h3 className="text-lg font-bold text-foreground">{director.name}</h3>
                 <p className="text-muted-foreground font-medium">{director.title}</p>
               </CardContent>
             </Card>

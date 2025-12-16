@@ -18,7 +18,7 @@ export default function AboutSection() {
             />
           </div>
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('tentangKamiTitle')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('tentangKamiTitle')}</h2>
             <p className="text-muted-foreground text-justify">
               {t('tentangKamiDesc1')}
             </p>

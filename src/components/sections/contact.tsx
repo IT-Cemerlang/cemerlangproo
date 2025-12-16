@@ -26,7 +26,7 @@ export default function ContactSection() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div className="text-secondary-foreground">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">{t('kontakTitle')}</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground">{t('kontakTitle')}</h2>
                     <p className="mt-4 text-lg text-secondary-foreground/80">
                         {t('kontakSubtitle')}
                     </p>
@@ -51,7 +51,7 @@ export default function ContactSection() {
                             <div className="p-4 bg-primary/20 rounded-full mb-4">
                                 <Share2 className="w-12 h-12 text-primary" />
                             </div>
-                            <h3 className="text-2xl font-bold text-primary mb-2">{t('terhubungDenganKami')}</h3>
+                            <h3 className="text-2xl font-bold text-foreground mb-2">{t('terhubungDenganKami')}</h3>
                             <p className="text-muted-foreground mb-6">{t('terhubungSubtitle')}</p>
                             <div className="flex justify-center gap-4">
                                 <Button size="icon" variant="outline" asChild>

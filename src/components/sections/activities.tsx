@@ -24,7 +24,7 @@ export default function ActivitiesSection() {
     <section id="kegiatan" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary font-headline">{t('kegiatanTitle')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground font-headline">{t('kegiatanTitle')}</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">{t('kegiatanSubtitle')}</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -36,10 +36,10 @@ export default function ActivitiesSection() {
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="text-lg text-primary text-center w-full flex-grow flex items-center justify-center">{t(activity.titleKey as any)}</CardTitle>
+                <CardTitle className="text-lg font-bold text-foreground text-center w-full flex-grow flex items-center justify-center">{t(activity.titleKey as any)}</CardTitle>
               </CardContent>
               <CardFooter className="p-6 pt-0 mt-auto">
-                <Button asChild variant="link" className="p-0 h-auto text-primary mx-auto">
+                <Button asChild variant="link" className="p-0 h-auto font-bold text-foreground mx-auto">
                   <Link href={`/kegiatan/${activity.slug}`}>
                     {t('selengkapnya')} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
